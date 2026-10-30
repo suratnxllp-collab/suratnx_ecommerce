@@ -1016,7 +1016,7 @@ h4 {
 .pcard {
   position: relative;
   background: var(--paper);
-  border: 1px solid var(--line);
+  border: 2px solid var(--line);
   display: flex;
   flex-direction: column;
   transition: box-shadow .25s, transform .25s
