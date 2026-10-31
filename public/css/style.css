@@ -7040,3 +7040,90 @@ body[data-page="account"] #site-footer {
         flex-shrink: 0;
     }
 }
+
+
+/* ===== Social icons (footer, contact, about) ===== */
+.social-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  color: var(--gold-d);
+  background: transparent;
+  transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+.social-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  background: var(--gold-d);
+  border-color: var(--gold-d);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(153, 118, 77, .28);
+}
+
+.social-icon:focus-visible {
+  outline: 2px solid var(--gold-d);
+  outline-offset: 2px;
+}
+
+/* light pages (contact / about) */
+.contact-social > .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* Contact / About social icons: stronger border */
+.contact-social .social-icon {
+  border: 1.5px solid var(--gold);
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(153, 118, 77, .15);
+}
+
+.contact-social .social-icon:hover,
+.contact-social .social-icon:focus-visible {
+  background: var(--gold-d);
+  border-color: var(--gold-d);
+  color: #fff;
+}
+
+/* footer (dark background) */
+.ftr .social.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ftr .social .social-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid #5a4e3d;
+}
+
+.ftr .social .social-icon:hover,
+.ftr .social .social-icon:focus-visible {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .ftr .social .social-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+}
